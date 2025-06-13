@@ -27,6 +27,7 @@ export default function Signin() {
             const firstName = decoded.firstName;
             console.log("First Name:", firstName);
             navigate("/dashboard");
+            window.location.reload();
         } catch (error) {
             console.error("Error during signin:", error);
         }

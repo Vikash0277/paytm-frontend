@@ -26,6 +26,7 @@ export default function Signup() {
             
             console.log("Signup successful:", response.data);
             Navigate("/dashboard");
+            window.location.reload();
         } catch (error) {
             console.error("Error during signup:", error);
         }
